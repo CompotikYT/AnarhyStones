@@ -1,0 +1,9 @@
+name: AnarhyStones
+version: 1.0
+main: ua.anatoliy.anarhystones.AnarhyStones
+api-version: 1.20
+depend: [WorldGuard, WorldEdit]
+commands:
+  as:
+    description: Головна команда AnarhyStones
+    aliases: [anarhystones]

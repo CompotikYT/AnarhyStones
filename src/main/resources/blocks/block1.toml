@@ -1,0 +1,57 @@
+# ==========================================
+# PROTECTION BLOCK SETTINGS | НАСТРОЙКИ БЛОКА ЗАЩИТЫ
+# ==========================================
+
+# Block type | Тип блока
+type = "EMERALD_ORE"
+
+# Alias for command | Алиас для команды
+alias = "64"
+
+# Restrict obtaining | Ограничение на получение
+restrict_obtaining = true
+
+# World list | Список миров
+world_list_type = "blacklist"
+worlds = ["exampleworld1"]
+
+[hologram]
+enabled = true
+
+[region]
+x_radius = 64
+y_radius = 64
+z_radius = 64
+home_x_offset = 0.5
+home_y_offset = 1.0
+home_z_offset = 0.5
+
+# Default English flags | Флаги на английском (Russian in comments)
+flags = [
+    "pvp deny",
+    "tnt deny",
+    "greeting You entered the &bprotected zone &fof %player%", # Вы вошли в &bзащищенную зону &fигрока %player%
+    "farewell You left the &bprotected zone &fof %player%",   # Вы покинули &bзащищенную зону &fигрока %player%
+    "creeper-explosion deny",
+    "wither-damage deny",
+    "ghast-fireball deny"
+]
+
+priority = 0
+allow_merging = true
+
+[block_data]
+# Default English name | Название на английском
+display_name = "&a&m<---&r&b Protection Block (64 blocks) &r&a&m--->" # &a&m<---&r&b Блок Защиты (64 блока) &r&a&m--->
+lore = ["&6(⌐■_■) My items are safe here!"] # &6(⌐■_■) Никто не тронет мои вещи!
+
+[behaviour]
+no_drop = false
+prevent_piston_push = true
+prevent_explode = true
+destroy_region_when_explode = true
+allow_use_in_crafting = false
+
+[player]
+no_moving_when_tp_waiting = true
+tp_waiting_seconds = 3

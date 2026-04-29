@@ -1,0 +1,51 @@
+cooldown: '§6Увага: §7Будь ласка, зачекайте %time% секунд перед наступним встановленням!'
+no_such_command: '§cНемає такої команди. Введіть /as help для деталей.'
+no_access: '§cВам заборонено робити це тут.'
+no_room_in_inventory: '§cУ вашому інвентарі недостатньо місця.'
+no_room_dropping_on_floor: '§cНемає місця в інвентарі. Предмет викинуто на землю.'
+invalid_block: '§cНедійсний блок захисту.'
+not_enough_money: '§cНедостатньо грошей! Ціна: %price%.'
+paid_money: '§bВи заплатили $%price%.'
+invalid_world: '§cНедійсний світ.'
+must_be_player: '§cЦю команду може виконати лише гравець.'
+go_back_page: 'Попередня сторінка.'
+go_next_page: 'Наступна сторінка.'
+help: |-
+  §8§m=====§r Допомога AnarhyStones §8§m=====
+  §b> §7/as help
+help_next: §7Введіть /as help %page% для переходу на наступну сторінку!
+command_requires_player_name: §cЦя команда вимагає ім'я гравця.
+no_permission_toggle: §cУ вас немає прав на використання команди toggle.
+no_permission_create: §cУ вас немає прав на встановлення блоку захисту.
+# ... (всі інші no_permission_ перекладаються аналогічно: "У вас немає прав на...")
+psregion:
+  added_to_region: §b%player%§7 був доданий до цього регіону.
+  removed_from_region: §b%player%§7 був видалений з регіону.
+  not_in_region: §cВи не знаходитесь у приваті!
+  player_not_found: §cГравця не знайдено.
+  not_ps_region: §cЦе не регіон AnarhyStones.
+  region_does_not_exist: §cРегіон не існує.
+  no_regions_owned: §cУ вас немає приватів у цьому світі!
+  no_region_permission: §cУ вас немає прав робити це в цьому регіоні.
+  protected: §bЦя територія тепер захищена.
+  no_longer_protected: §eЦя територія більше не захищена.
+  cant_protect_that: §cВи не можете заприватити цю територію.
+  reached_region_limit: §cВи досягли ліміту приватів (%limit%).
+  region_overlap: §cВи не можете поставити блок тут, оскільки він перетинається з іншим приватом.
+  not_owner: §cВи не є власником цього регіону!
+  hidden: §7Блок захисту тепер прихований.
+toggle:
+  help: §b> §7/as toggle|on|off
+  help_desc: Увімкнути/вимкнути можливість встановлення блоків захисту.
+  toggle_on: §bВстановлення блоків захисту увімкнено.
+  toggle_off: §bВстановлення блоків захисту вимкнено.
+unclaim:
+  help: §b> §7/as unclaim
+  help_desc: Забрати блок захисту та видалити приват.
+  header: §8§m=====§r Видалення привату (натисніть) §8§m=====
+view:
+  help: §b> §7/as view
+  help_desc: Переглянути межі регіону.
+  generating: §7Генерація меж...
+  generate_done: §aГотово! Межі зникнуть через 30 секунд.
+# (Цю структуру ти можеш застосувати до решти дрібних команд, зберігаючи зміст)

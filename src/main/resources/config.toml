@@ -1,0 +1,56 @@
+# ==========================================
+# MAIN ANARHYSTONES PLUGIN SETTINGS | ГЛАВНЫЕ НАСТРОЙКИ ПЛАГИНА ANARHYSTONES
+# ==========================================
+
+# Please do not change the config version! (Used for auto-updates) | Пожалуйста, не изменяйте версию конфига! (Используется для автообновлений)
+config_version = 16
+
+# Language selection (ENG, UA, RU) | Выбор языка (ENG, UA, RU)
+language = "EN"
+
+# Cooldown between placing protection blocks (in seconds). -1 to disable. | Время ожидания между установкой блоков защиты (в секундах). -1 чтобы отключить.
+placing_cooldown = 5
+
+# Base plugin command (main command in the game) | Базовая команда плагина (главная команда в игре)
+base_command = "as"
+
+# Command aliases (abbreviations) (work via plugin.yml) | Алиасы (сокращения) для команды (работают через plugin.yml)
+aliases = [
+    "anarhystones",
+    "astone"
+]
+
+# Drop items on the ground if inventory is full when receiving a block | Выбрасывать ли предметы на землю, если инвентарь полон при получении блока
+drop_item_when_inventory_full = true
+
+# Allow players to merge new regions with those they already own (overlapping) | Разрешать ли игрокам объединять новые регионы с теми, которыми они уже владеют (перекрытие)
+allow_merging_regions = true
+
+# Disable protection block placement by default upon player login | Отключено ли размещение блоков защиты по умолчанию при входе игрока
+default_protection_block_placement_off = false
+
+# Allow region members to teleport to the region home (/as home) | Разрешать ли участникам (members) региона телепортироваться на дом региона (/as home)
+allow_home_teleport_for_members = true
+
+# ==========================================
+# PERMISSIONS | ПРАВА (PERMISSIONS)
+# ==========================================
+[permissions]
+# Access to /as reload, bypassing limits and other players' regions | Доступ к командам /as reload, обход лимитов и чужих приватов
+admin = "anarhystones.admin"
+
+# Permission to place a protection block | Право на установку блока защиты
+place = "anarhystones.place"
+
+# Permission to use the /as debug command | Право на использование команды /as debug
+debug = "anarhystones.debug"
+
+# ==========================================
+# REGION LIMITS | ЛИМИТЫ ПРИВАТОВ
+# ==========================================
+[limits]
+# Default amount of regions a normal player can have | Количество приватов, которое может иметь обычный игрок по умолчанию
+default_max_regions = 1
+
+# Permission prefix for custom limits (e.g.: anarhystones.limit.5 gives 5 regions) | Префикс права для кастомных лимитов (например: anarhystones.limit.5 даст 5 приватов)
+limit_permission_node = "anarhystones.limit."
